@@ -1,0 +1,41 @@
+# 任务一：支付密码验证
+#方式一：
+secret = int(input('支付宝支付密码：'))
+if secret == 8888:
+    print('支付数据合法')
+else:
+    print('支付数字不合法，支付密码只能是数字！')
+
+#方式二：
+pwd = input('支付宝支付密码')
+if pwd.isdigit():
+    print('支付数字合法')
+else:
+    print('支付数字不合法，支付密码只能是数据')
+
+# 方式三：
+print('支付数据合法' if pwd.isdigit() else '支付数字不合法，支付密码只能是数据')
+
+
+# 任务二：模拟QQ账号登录
+username = 296626472
+secret = 123
+username_in = input('请输入用户名')
+secret_in = input('请输入密码')
+if int(username_in) == username:
+    if int(secret_in) == secret:
+        print('登录成功')
+    else:
+        print('对不起，密码不正确')
+else:
+    print('对不起，账号不正确')
+
+#任务三：根据星座查看运势
+d={
+    '白羊座':'''123
+456''',
+    '金牛座' : '''789
+    101'''
+}
+star = input('请输入你的星座')
+print(d.get(star))
