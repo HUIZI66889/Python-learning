@@ -1,0 +1,13 @@
+# 任务一：将数值转化为二进制数
+num = int(input("请输入一个整数"))
+print(str(num) + '的二进制数为:' + bin(num))
+print('%s的二进制数为：%s' % (num, bin(num)))
+print('{0}的二进制数为：{1}'.format(num, bin(num)))
+print(f'{num}的二进制数为{bin(num)}')
+
+# 任务二：实现用户收集充值
+print('用户手机账户原有花费金额为：\033[0;35m8元\033[m')
+money = int(input('请输入用户充值金额'))
+print(f'当前可用余额：{8 + money}')
+
+
